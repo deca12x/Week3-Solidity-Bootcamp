@@ -1,39 +1,46 @@
 import { ethers } from "ethers";
-import { TokenizedBallot, TokenizedBallot__factory } from "../typechain-types";
+import {
+  MyToken,
+  MyToken__factory,
+  TokenizedBallot,
+  TokenizedBallot__factory,
+} from "../typechain-types";
 import * as dotenv from "dotenv";
 dotenv.config();
 
 async function main() {
-  // PASS DEPLOYED CONTRACT ADDRESSES AS ARGUMENTS WHEN RUNNING SCRIPT
-  const myAddresses = process.argv.slice(2); // No need to encode, because addresses are already hexadecimals
-  if (!myAddresses[0]) {
-    throw new Error("No contract address provided");
-  }
-  const ballotContractAddress = myAddresses[0];
-
-  // CONFIGURE PROVIDER & WALLET, ATTACH MYTOKEN CONTRACT
+  // CONFIGURE PROVIDER & WALLET, ATTACH CONTRACT
   const provider = new ethers.JsonRpcProvider(
     process.env.RPC_ENDPOINT_URL ?? ""
   );
   const wallet = new ethers.Wallet(process.env.PRIVATE_KEY ?? "", provider);
+  const myTokenContractAddress = "0x335a040203392ECdc4b34805da89623C4c5F8a4E";
+  const myToken__factory = new MyToken__factory(wallet);
+  const myToken = myToken__factory.attach(myTokenContractAddress) as MyToken;
+  const ballotContractAddress = "0x79b4107dd9fA31F02c853C43Ca14f92242081894";
   const tokenizedBallot__factory = new TokenizedBallot__factory(wallet);
   const tokenizedBallot = tokenizedBallot__factory.attach(
     ballotContractAddress
   ) as TokenizedBallot;
 
+  // CHECK VOTING POWER
+  console.log(`My address: ${wallet.address}`);
+  // const votingPowerBefore = await tokenizedBallot.votingPower(wallet.address);
+  const voteFreezeBlockNumber = await tokenizedBallot.voteFreezeBlockNumber();
+  const votingPowerBefore = await myToken.getPastVotes(
+    wallet.address,
+    voteFreezeBlockNumber
+  );
+  console.log(`My remaining voting power: ${votingPowerBefore}`);
+
   // FETCH PROPOSALS
   const proposal0 = await tokenizedBallot.proposals(0);
   const proposal1 = await tokenizedBallot.proposals(1);
 
-  // CHECK VOTING POWER
-  console.log(`My address: ${wallet.address}`);
-  const votingPowerBefore = await tokenizedBallot.votingPower(wallet.address);
-  console.log(`My remaining voting power: ${votingPowerBefore}`);
-
   // CAST VOTE
-  const voteTx = await tokenizedBallot
-    .connect(wallet)
-    .vote(0, ethers.parseUnits("200"));
+  const voteTx = await tokenizedBallot.vote(0, 200);
+  console.log("Casting vote...");
+  await voteTx.wait();
 
   // CHECK VOTE COUNT FOR ALL PROPOSALS
   const name1 = ethers.decodeBytes32String(proposal0.name);
@@ -42,9 +49,7 @@ async function main() {
   console.log(`Proposal ${name2} vote count: ${proposal1.voteCount}`);
 
   // CHECK VOTING POWER
-  const votingPowerAfter = await tokenizedBallot.votingPower(
-    "0x986047959F42F6Ed84d2bB20A015A547F1753123"
-  );
+  const votingPowerAfter = await tokenizedBallot.votingPower(wallet.address);
   console.log(`My remaining voting power: ${votingPowerAfter}`);
 }
 
