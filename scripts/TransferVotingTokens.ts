@@ -6,6 +6,12 @@ dotenv.config();
 async function main() {
   // PASS DEPLOYED CONTRACT ADDRESSES AS ARGUMENTS WHEN RUNNING SCRIPT
   const myAddresses = process.argv.slice(2); // No need to encode, because addresses are already hexadecimals
+  if (!myAddresses[0]) {
+    throw new Error("No contract address provided");
+  }
+  if (!myAddresses[1]) {
+    throw new Error("No recipient address provided");
+  }
   const myTokenContractAddress = myAddresses[0];
   const tokenRecipientAddress = myAddresses[1];
 
@@ -19,17 +25,17 @@ async function main() {
   const myToken__factory = new MyToken__factory(wallet);
   const myToken = myToken__factory.attach(myTokenContractAddress) as MyToken;
 
-  // MINT VOTING TOKENS FOR A RECIPIENT GIVEN AS ARGUMENT
-  const mintTxResponse = await myToken.mint(
+  // TRANSFER VOTING TOKENS TO A RECIPIENT GIVEN AS ARGUMENT
+  const transferTxResponse = await myToken.transfer(
     tokenRecipientAddress,
-    500000000000000000n
+    1000
   );
-  const mintTxReceipt = await mintTxResponse.wait();
+  const transferTxReceipt = await transferTxResponse.wait();
 
   // CHECK BALANCE OF RECIPIENT
   const balance = await myToken.balanceOf(tokenRecipientAddress);
   console.log(
-    `Voting tokens minted for ${tokenRecipientAddress}. Balance: ${balance}`
+    `Voting tokens transferred to ${tokenRecipientAddress}. Balance: ${balance}`
   );
 }
 

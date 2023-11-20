@@ -26,12 +26,28 @@ async function main() {
     `MyToken contract deployed at ${myTokenAddress} at block ${blockNumber}\n`
   );
 
+  // MINT VOTING TOKENS FOR A RECIPIENT GIVEN AS ARGUMENT
+  const mintTxResponse = await myToken.mint(wallet.address, 500);
+  const mintTxReceipt = await mintTxResponse.wait();
+  const balance = await myToken.balanceOf(wallet.address);
+  console.log(`Voting tokens minted. Balance: ${balance}`);
+
+  // DELEGATE VOTING POWER TO AN ADDRESS
+  const delegateTx = await myToken.delegate(wallet.address);
+  console.log("Delegating voting power...");
+  console.log(wallet.address);
+  await delegateTx.wait();
+  console.log("Voting power delegated");
+  const delegateeVotingPower = await myToken.getVotes(wallet.address);
+  console.log(`Delegatee has voting power of ${delegateeVotingPower}`);
+
   // DEPLOY TOKENIZED BALLOT
+  const freezeBlockNumber = await provider.getBlockNumber();
   const tokenizedBallot__factory = new TokenizedBallot__factory(wallet);
   const tokenizedBallot = await tokenizedBallot__factory.deploy(
     proposals,
     myTokenAddress,
-    blockNumber
+    freezeBlockNumber
   );
   await tokenizedBallot.waitForDeployment();
   const tokenizedBallotAddress = await tokenizedBallot.getAddress();
