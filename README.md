@@ -1,13 +1,3 @@
-# Sample Hardhat Project
+# Weekend Project for Week 3 of the bootcamp
 
-This project demonstrates a basic Hardhat use case. It comes with a sample contract, a test for that contract, and a script that deploys that contract.
-
-Try running some of the following tasks:
-
-```shell
-npx hardhat help
-npx hardhat test
-REPORT_GAS=true npx hardhat test
-npx hardhat node
-npx hardhat run scripts/deploy.ts
-```
+Create a token and a ballot contract, such that users have votes depending on their amount of tokens, then deploy, call functions and query the blockchain with scripts.
