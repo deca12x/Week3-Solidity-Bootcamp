@@ -25,8 +25,15 @@ async function main() {
   const proposal0 = await tokenizedBallot.proposals(0);
   const proposal1 = await tokenizedBallot.proposals(1);
 
+  // CHECK VOTING POWER
+  console.log(`My address: ${wallet.address}`);
+  const votingPowerBefore = await tokenizedBallot.votingPower(wallet.address);
+  console.log(`My remaining voting power: ${votingPowerBefore}`);
+
   // CAST VOTE
-  const voteTx = await tokenizedBallot.vote(0, ethers.parseUnits("200"));
+  const voteTx = await tokenizedBallot
+    .connect(wallet)
+    .vote(0, ethers.parseUnits("200"));
 
   // CHECK VOTE COUNT FOR ALL PROPOSALS
   const name1 = ethers.decodeBytes32String(proposal0.name);
@@ -34,15 +41,11 @@ async function main() {
   console.log(`Proposal ${name1} vote count: ${proposal0.voteCount}`);
   console.log(`Proposal ${name2} vote count: ${proposal1.voteCount}`);
 
-  // CHECK VOTING POWER OF BOTH ADDRESSES
-  const votingPower0 = await tokenizedBallot.votingPower(
+  // CHECK VOTING POWER
+  const votingPowerAfter = await tokenizedBallot.votingPower(
     "0x986047959F42F6Ed84d2bB20A015A547F1753123"
   );
-  const votingPower1 = await tokenizedBallot.votingPower(
-    "0x5B38Da6a701c568545dCfcB03FcB875f56beddC4"
-  );
-  console.log(`Remaining voting power of wallet 1: ${votingPower0}`);
-  console.log(`Remaining voting power of wallet 2: ${votingPower1}`);
+  console.log(`My remaining voting power: ${votingPowerAfter}`);
 }
 
 main()

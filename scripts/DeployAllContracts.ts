@@ -35,10 +35,10 @@ async function main() {
   // DELEGATE VOTING POWER TO AN ADDRESS
   const delegateTx = await myToken.delegate(wallet.address);
   console.log("Delegating voting power...");
-  console.log(wallet.address);
   await delegateTx.wait();
   console.log("Voting power delegated");
   const delegateeVotingPower = await myToken.getVotes(wallet.address);
+  console.log(`Delegatee is ${wallet.address}`);
   console.log(`Delegatee has voting power of ${delegateeVotingPower}`);
 
   // DEPLOY TOKENIZED BALLOT
