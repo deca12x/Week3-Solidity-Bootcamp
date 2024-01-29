@@ -1,8 +1,8 @@
 {
   "_format": "hh-sol-cache-2",
   "files": {
-    "/Users/deca/code/deca12x/SolidityBootcamp2023/Day12/project/contracts/MyNFT.sol": {
-      "lastModificationDate": 1700358784873,
+    "/Users/deca/code/deca12x/SolidityBootcamp2023/Day12TokenizedBallot/project/contracts/MyNFT.sol": {
+      "lastModificationDate": 1701375347158,
       "contentHash": "a2c67e9bf3b904fadf7876b677e31e71",
       "sourceName": "contracts/MyNFT.sol",
       "solcConfig": {
@@ -40,7 +40,7 @@
         "MyNFT"
       ]
     },
-    "/Users/deca/code/deca12x/SolidityBootcamp2023/Day12/project/node_modules/@openzeppelin/contracts/access/AccessControl.sol": {
+    "/Users/deca/code/deca12x/SolidityBootcamp2023/Day12TokenizedBallot/project/node_modules/@openzeppelin/contracts/access/AccessControl.sol": {
       "lastModificationDate": 1699556585301,
       "contentHash": "a2b1ec38a8dad325a596f926890772b8",
       "sourceName": "@openzeppelin/contracts/access/AccessControl.sol",
@@ -80,7 +80,7 @@
         "AccessControl"
       ]
     },
-    "/Users/deca/code/deca12x/SolidityBootcamp2023/Day12/project/node_modules/@openzeppelin/contracts/token/ERC721/ERC721.sol": {
+    "/Users/deca/code/deca12x/SolidityBootcamp2023/Day12TokenizedBallot/project/node_modules/@openzeppelin/contracts/token/ERC721/ERC721.sol": {
       "lastModificationDate": 1699556585352,
       "contentHash": "95602b04f0b53f1139f4668d123ddeb7",
       "sourceName": "@openzeppelin/contracts/token/ERC721/ERC721.sol",
@@ -123,7 +123,7 @@
         "ERC721"
       ]
     },
-    "/Users/deca/code/deca12x/SolidityBootcamp2023/Day12/project/node_modules/@openzeppelin/contracts/token/ERC721/extensions/ERC721Burnable.sol": {
+    "/Users/deca/code/deca12x/SolidityBootcamp2023/Day12TokenizedBallot/project/node_modules/@openzeppelin/contracts/token/ERC721/extensions/ERC721Burnable.sol": {
       "lastModificationDate": 1699556585352,
       "contentHash": "5a341bfc4fe3ee5357ccdebd3a78ad2c",
       "sourceName": "@openzeppelin/contracts/token/ERC721/extensions/ERC721Burnable.sol",
@@ -161,7 +161,42 @@
         "ERC721Burnable"
       ]
     },
-    "/Users/deca/code/deca12x/SolidityBootcamp2023/Day12/project/node_modules/@openzeppelin/contracts/utils/Strings.sol": {
+    "/Users/deca/code/deca12x/SolidityBootcamp2023/Day12TokenizedBallot/project/node_modules/@openzeppelin/contracts/utils/Context.sol": {
+      "lastModificationDate": 1699556585312,
+      "contentHash": "5f2c5c4b6af2dd4551027144797bc8be",
+      "sourceName": "@openzeppelin/contracts/utils/Context.sol",
+      "solcConfig": {
+        "version": "0.8.19",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "Context"
+      ]
+    },
+    "/Users/deca/code/deca12x/SolidityBootcamp2023/Day12TokenizedBallot/project/node_modules/@openzeppelin/contracts/utils/Strings.sol": {
       "lastModificationDate": 1699556585444,
       "contentHash": "48686fc32a22a3754b8e63321857dd2a",
       "sourceName": "@openzeppelin/contracts/utils/Strings.sol",
@@ -199,42 +234,7 @@
         "Strings"
       ]
     },
-    "/Users/deca/code/deca12x/SolidityBootcamp2023/Day12/project/node_modules/@openzeppelin/contracts/utils/Context.sol": {
-      "lastModificationDate": 1699556585312,
-      "contentHash": "5f2c5c4b6af2dd4551027144797bc8be",
-      "sourceName": "@openzeppelin/contracts/utils/Context.sol",
-      "solcConfig": {
-        "version": "0.8.19",
-        "settings": {
-          "optimizer": {
-            "enabled": false,
-            "runs": 200
-          },
-          "outputSelection": {
-            "*": {
-              "*": [
-                "abi",
-                "evm.bytecode",
-                "evm.deployedBytecode",
-                "evm.methodIdentifiers",
-                "metadata"
-              ],
-              "": [
-                "ast"
-              ]
-            }
-          }
-        }
-      },
-      "imports": [],
-      "versionPragmas": [
-        "^0.8.0"
-      ],
-      "artifacts": [
-        "Context"
-      ]
-    },
-    "/Users/deca/code/deca12x/SolidityBootcamp2023/Day12/project/node_modules/@openzeppelin/contracts/utils/introspection/ERC165.sol": {
+    "/Users/deca/code/deca12x/SolidityBootcamp2023/Day12TokenizedBallot/project/node_modules/@openzeppelin/contracts/utils/introspection/ERC165.sol": {
       "lastModificationDate": 1699556585335,
       "contentHash": "0e7db055ce108f9da7bb6686a00287c0",
       "sourceName": "@openzeppelin/contracts/utils/introspection/ERC165.sol",
@@ -271,7 +271,7 @@
         "ERC165"
       ]
     },
-    "/Users/deca/code/deca12x/SolidityBootcamp2023/Day12/project/node_modules/@openzeppelin/contracts/access/IAccessControl.sol": {
+    "/Users/deca/code/deca12x/SolidityBootcamp2023/Day12TokenizedBallot/project/node_modules/@openzeppelin/contracts/access/IAccessControl.sol": {
       "lastModificationDate": 1699556585366,
       "contentHash": "57c84298234411cea19c7c284d86be8b",
       "sourceName": "@openzeppelin/contracts/access/IAccessControl.sol",
@@ -306,7 +306,7 @@
         "IAccessControl"
       ]
     },
-    "/Users/deca/code/deca12x/SolidityBootcamp2023/Day12/project/node_modules/@openzeppelin/contracts/utils/math/Math.sol": {
+    "/Users/deca/code/deca12x/SolidityBootcamp2023/Day12TokenizedBallot/project/node_modules/@openzeppelin/contracts/utils/math/Math.sol": {
       "lastModificationDate": 1699556585434,
       "contentHash": "fe63409d8a06818b926cf89e0ea88b1b",
       "sourceName": "@openzeppelin/contracts/utils/math/Math.sol",
@@ -341,7 +341,7 @@
         "Math"
       ]
     },
-    "/Users/deca/code/deca12x/SolidityBootcamp2023/Day12/project/node_modules/@openzeppelin/contracts/utils/math/SignedMath.sol": {
+    "/Users/deca/code/deca12x/SolidityBootcamp2023/Day12TokenizedBallot/project/node_modules/@openzeppelin/contracts/utils/math/SignedMath.sol": {
       "lastModificationDate": 1699556585442,
       "contentHash": "9488ebd4daacfee8ad04811600d7d061",
       "sourceName": "@openzeppelin/contracts/utils/math/SignedMath.sol",
@@ -376,7 +376,7 @@
         "SignedMath"
       ]
     },
-    "/Users/deca/code/deca12x/SolidityBootcamp2023/Day12/project/node_modules/@openzeppelin/contracts/utils/introspection/IERC165.sol": {
+    "/Users/deca/code/deca12x/SolidityBootcamp2023/Day12TokenizedBallot/project/node_modules/@openzeppelin/contracts/utils/introspection/IERC165.sol": {
       "lastModificationDate": 1699556585379,
       "contentHash": "03e6768535ac4da0e9756f1d8a4a018a",
       "sourceName": "@openzeppelin/contracts/utils/introspection/IERC165.sol",
@@ -411,7 +411,7 @@
         "IERC165"
       ]
     },
-    "/Users/deca/code/deca12x/SolidityBootcamp2023/Day12/project/node_modules/@openzeppelin/contracts/token/ERC721/IERC721.sol": {
+    "/Users/deca/code/deca12x/SolidityBootcamp2023/Day12TokenizedBallot/project/node_modules/@openzeppelin/contracts/token/ERC721/IERC721.sol": {
       "lastModificationDate": 1699556585420,
       "contentHash": "48de4c9a3a4ae5ef66a2aa620843413f",
       "sourceName": "@openzeppelin/contracts/token/ERC721/IERC721.sol",
@@ -448,7 +448,7 @@
         "IERC721"
       ]
     },
-    "/Users/deca/code/deca12x/SolidityBootcamp2023/Day12/project/node_modules/@openzeppelin/contracts/utils/Address.sol": {
+    "/Users/deca/code/deca12x/SolidityBootcamp2023/Day12TokenizedBallot/project/node_modules/@openzeppelin/contracts/utils/Address.sol": {
       "lastModificationDate": 1699556585306,
       "contentHash": "211ffd288c1588ba8c10eae668ca3c66",
       "sourceName": "@openzeppelin/contracts/utils/Address.sol",
@@ -483,7 +483,7 @@
         "Address"
       ]
     },
-    "/Users/deca/code/deca12x/SolidityBootcamp2023/Day12/project/node_modules/@openzeppelin/contracts/token/ERC721/IERC721Receiver.sol": {
+    "/Users/deca/code/deca12x/SolidityBootcamp2023/Day12TokenizedBallot/project/node_modules/@openzeppelin/contracts/token/ERC721/IERC721Receiver.sol": {
       "lastModificationDate": 1699556585424,
       "contentHash": "c22d4395e33763de693fd440c6fd10e1",
       "sourceName": "@openzeppelin/contracts/token/ERC721/IERC721Receiver.sol",
@@ -518,7 +518,7 @@
         "IERC721Receiver"
       ]
     },
-    "/Users/deca/code/deca12x/SolidityBootcamp2023/Day12/project/node_modules/@openzeppelin/contracts/token/ERC721/extensions/IERC721Metadata.sol": {
+    "/Users/deca/code/deca12x/SolidityBootcamp2023/Day12TokenizedBallot/project/node_modules/@openzeppelin/contracts/token/ERC721/extensions/IERC721Metadata.sol": {
       "lastModificationDate": 1699556585423,
       "contentHash": "efbc0d15b80a74e34dbe8da0f3e879bb",
       "sourceName": "@openzeppelin/contracts/token/ERC721/extensions/IERC721Metadata.sol",
@@ -555,7 +555,7 @@
         "IERC721Metadata"
       ]
     },
-    "/Users/deca/code/deca12x/SolidityBootcamp2023/Day12/project/node_modules/@openzeppelin/contracts/token/ERC20/ERC20.sol": {
+    "/Users/deca/code/deca12x/SolidityBootcamp2023/Day12TokenizedBallot/project/node_modules/@openzeppelin/contracts/token/ERC20/ERC20.sol": {
       "lastModificationDate": 1699556585341,
       "contentHash": "3ae5166c6827a9cf1a7a462d1632b464",
       "sourceName": "@openzeppelin/contracts/token/ERC20/ERC20.sol",
@@ -594,7 +594,7 @@
         "ERC20"
       ]
     },
-    "/Users/deca/code/deca12x/SolidityBootcamp2023/Day12/project/node_modules/@openzeppelin/contracts/token/ERC20/IERC20.sol": {
+    "/Users/deca/code/deca12x/SolidityBootcamp2023/Day12TokenizedBallot/project/node_modules/@openzeppelin/contracts/token/ERC20/IERC20.sol": {
       "lastModificationDate": 1699556585384,
       "contentHash": "df36f7051335cd1e748b1b6463b7fdd3",
       "sourceName": "@openzeppelin/contracts/token/ERC20/IERC20.sol",
@@ -629,7 +629,7 @@
         "IERC20"
       ]
     },
-    "/Users/deca/code/deca12x/SolidityBootcamp2023/Day12/project/node_modules/@openzeppelin/contracts/token/ERC20/extensions/IERC20Metadata.sol": {
+    "/Users/deca/code/deca12x/SolidityBootcamp2023/Day12TokenizedBallot/project/node_modules/@openzeppelin/contracts/token/ERC20/extensions/IERC20Metadata.sol": {
       "lastModificationDate": 1699556585385,
       "contentHash": "909ab67fc5c25033fe6cd364f8c056f9",
       "sourceName": "@openzeppelin/contracts/token/ERC20/extensions/IERC20Metadata.sol",
@@ -666,7 +666,7 @@
         "IERC20Metadata"
       ]
     },
-    "/Users/deca/code/deca12x/SolidityBootcamp2023/Day12/project/node_modules/@openzeppelin/contracts/token/ERC20/extensions/ERC20Permit.sol": {
+    "/Users/deca/code/deca12x/SolidityBootcamp2023/Day12TokenizedBallot/project/node_modules/@openzeppelin/contracts/token/ERC20/extensions/ERC20Permit.sol": {
       "lastModificationDate": 1699556585343,
       "contentHash": "c8946432e6d37418cb12a15668e3c0cd",
       "sourceName": "@openzeppelin/contracts/token/ERC20/extensions/ERC20Permit.sol",
@@ -707,7 +707,7 @@
         "ERC20Permit"
       ]
     },
-    "/Users/deca/code/deca12x/SolidityBootcamp2023/Day12/project/node_modules/@openzeppelin/contracts/utils/cryptography/ECDSA.sol": {
+    "/Users/deca/code/deca12x/SolidityBootcamp2023/Day12TokenizedBallot/project/node_modules/@openzeppelin/contracts/utils/cryptography/ECDSA.sol": {
       "lastModificationDate": 1699556585324,
       "contentHash": "d822a8a9468649cab463f29f5decf5cc",
       "sourceName": "@openzeppelin/contracts/utils/cryptography/ECDSA.sol",
@@ -744,7 +744,42 @@
         "ECDSA"
       ]
     },
-    "/Users/deca/code/deca12x/SolidityBootcamp2023/Day12/project/node_modules/@openzeppelin/contracts/utils/cryptography/EIP712.sol": {
+    "/Users/deca/code/deca12x/SolidityBootcamp2023/Day12TokenizedBallot/project/node_modules/@openzeppelin/contracts/utils/Counters.sol": {
+      "lastModificationDate": 1699556585312,
+      "contentHash": "74654e3ae5d7f39555055dfe244dab7a",
+      "sourceName": "@openzeppelin/contracts/utils/Counters.sol",
+      "solcConfig": {
+        "version": "0.8.19",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "Counters"
+      ]
+    },
+    "/Users/deca/code/deca12x/SolidityBootcamp2023/Day12TokenizedBallot/project/node_modules/@openzeppelin/contracts/utils/cryptography/EIP712.sol": {
       "lastModificationDate": 1699556585324,
       "contentHash": "459aeb9cc3fc3c6d67d30ffefb724aba",
       "sourceName": "@openzeppelin/contracts/utils/cryptography/EIP712.sol",
@@ -783,42 +818,7 @@
         "EIP712"
       ]
     },
-    "/Users/deca/code/deca12x/SolidityBootcamp2023/Day12/project/node_modules/@openzeppelin/contracts/utils/Counters.sol": {
-      "lastModificationDate": 1699556585312,
-      "contentHash": "74654e3ae5d7f39555055dfe244dab7a",
-      "sourceName": "@openzeppelin/contracts/utils/Counters.sol",
-      "solcConfig": {
-        "version": "0.8.19",
-        "settings": {
-          "optimizer": {
-            "enabled": false,
-            "runs": 200
-          },
-          "outputSelection": {
-            "*": {
-              "*": [
-                "abi",
-                "evm.bytecode",
-                "evm.deployedBytecode",
-                "evm.methodIdentifiers",
-                "metadata"
-              ],
-              "": [
-                "ast"
-              ]
-            }
-          }
-        }
-      },
-      "imports": [],
-      "versionPragmas": [
-        "^0.8.0"
-      ],
-      "artifacts": [
-        "Counters"
-      ]
-    },
-    "/Users/deca/code/deca12x/SolidityBootcamp2023/Day12/project/node_modules/@openzeppelin/contracts/token/ERC20/extensions/IERC20Permit.sol": {
+    "/Users/deca/code/deca12x/SolidityBootcamp2023/Day12TokenizedBallot/project/node_modules/@openzeppelin/contracts/token/ERC20/extensions/IERC20Permit.sol": {
       "lastModificationDate": 1699556585385,
       "contentHash": "aa849939a4ae83a4dcb2dca9b3e9e707",
       "sourceName": "@openzeppelin/contracts/token/ERC20/extensions/IERC20Permit.sol",
@@ -853,7 +853,7 @@
         "IERC20Permit"
       ]
     },
-    "/Users/deca/code/deca12x/SolidityBootcamp2023/Day12/project/node_modules/@openzeppelin/contracts/utils/ShortStrings.sol": {
+    "/Users/deca/code/deca12x/SolidityBootcamp2023/Day12TokenizedBallot/project/node_modules/@openzeppelin/contracts/utils/ShortStrings.sol": {
       "lastModificationDate": 1699556585441,
       "contentHash": "8dde288da49722a70f34ee369be4bfba",
       "sourceName": "@openzeppelin/contracts/utils/ShortStrings.sol",
@@ -890,7 +890,7 @@
         "ShortStrings"
       ]
     },
-    "/Users/deca/code/deca12x/SolidityBootcamp2023/Day12/project/node_modules/@openzeppelin/contracts/interfaces/IERC5267.sol": {
+    "/Users/deca/code/deca12x/SolidityBootcamp2023/Day12TokenizedBallot/project/node_modules/@openzeppelin/contracts/interfaces/IERC5267.sol": {
       "lastModificationDate": 1699556585390,
       "contentHash": "b1756048024350a162c3be27c04aa652",
       "sourceName": "@openzeppelin/contracts/interfaces/IERC5267.sol",
@@ -925,7 +925,7 @@
         "IERC5267"
       ]
     },
-    "/Users/deca/code/deca12x/SolidityBootcamp2023/Day12/project/node_modules/@openzeppelin/contracts/utils/StorageSlot.sol": {
+    "/Users/deca/code/deca12x/SolidityBootcamp2023/Day12TokenizedBallot/project/node_modules/@openzeppelin/contracts/utils/StorageSlot.sol": {
       "lastModificationDate": 1699556585443,
       "contentHash": "682f7dd1f2e1147c8390e7575deceb2d",
       "sourceName": "@openzeppelin/contracts/utils/StorageSlot.sol",
@@ -960,7 +960,7 @@
         "StorageSlot"
       ]
     },
-    "/Users/deca/code/deca12x/SolidityBootcamp2023/Day12/project/node_modules/@openzeppelin/contracts/token/ERC20/extensions/ERC20Votes.sol": {
+    "/Users/deca/code/deca12x/SolidityBootcamp2023/Day12TokenizedBallot/project/node_modules/@openzeppelin/contracts/token/ERC20/extensions/ERC20Votes.sol": {
       "lastModificationDate": 1699556585345,
       "contentHash": "c093956f6e012e5967f5377362a91c23",
       "sourceName": "@openzeppelin/contracts/token/ERC20/extensions/ERC20Votes.sol",
@@ -1001,7 +1001,7 @@
         "ERC20Votes"
       ]
     },
-    "/Users/deca/code/deca12x/SolidityBootcamp2023/Day12/project/node_modules/@openzeppelin/contracts/interfaces/IERC5805.sol": {
+    "/Users/deca/code/deca12x/SolidityBootcamp2023/Day12TokenizedBallot/project/node_modules/@openzeppelin/contracts/interfaces/IERC5805.sol": {
       "lastModificationDate": 1699556585401,
       "contentHash": "78962c5ba0fec9f6cad8f71cf96ae30b",
       "sourceName": "@openzeppelin/contracts/interfaces/IERC5805.sol",
@@ -1039,7 +1039,7 @@
         "IERC5805"
       ]
     },
-    "/Users/deca/code/deca12x/SolidityBootcamp2023/Day12/project/node_modules/@openzeppelin/contracts/utils/math/SafeCast.sol": {
+    "/Users/deca/code/deca12x/SolidityBootcamp2023/Day12TokenizedBallot/project/node_modules/@openzeppelin/contracts/utils/math/SafeCast.sol": {
       "lastModificationDate": 1699556585439,
       "contentHash": "67cf2dfe1d1c22b4ea7f242e8a17f431",
       "sourceName": "@openzeppelin/contracts/utils/math/SafeCast.sol",
@@ -1074,7 +1074,7 @@
         "SafeCast"
       ]
     },
-    "/Users/deca/code/deca12x/SolidityBootcamp2023/Day12/project/node_modules/@openzeppelin/contracts/governance/utils/IVotes.sol": {
+    "/Users/deca/code/deca12x/SolidityBootcamp2023/Day12TokenizedBallot/project/node_modules/@openzeppelin/contracts/governance/utils/IVotes.sol": {
       "lastModificationDate": 1699556585432,
       "contentHash": "e2ea5c24dc3967534a8ac4df343668c2",
       "sourceName": "@openzeppelin/contracts/governance/utils/IVotes.sol",
@@ -1109,7 +1109,7 @@
         "IVotes"
       ]
     },
-    "/Users/deca/code/deca12x/SolidityBootcamp2023/Day12/project/node_modules/@openzeppelin/contracts/interfaces/IERC6372.sol": {
+    "/Users/deca/code/deca12x/SolidityBootcamp2023/Day12TokenizedBallot/project/node_modules/@openzeppelin/contracts/interfaces/IERC6372.sol": {
       "lastModificationDate": 1699556585401,
       "contentHash": "f9153597c0095dfaa672b15968161166",
       "sourceName": "@openzeppelin/contracts/interfaces/IERC6372.sol",
@@ -1144,8 +1144,8 @@
         "IERC6372"
       ]
     },
-    "/Users/deca/code/deca12x/SolidityBootcamp2023/Day12/project/contracts/MyToken.sol": {
-      "lastModificationDate": 1700358961726,
+    "/Users/deca/code/deca12x/SolidityBootcamp2023/Day12TokenizedBallot/project/contracts/MyToken.sol": {
+      "lastModificationDate": 1701375347158,
       "contentHash": "f33a471c2ae182825779e4447bd4e448",
       "sourceName": "contracts/MyToken.sol",
       "solcConfig": {
@@ -1184,7 +1184,7 @@
         "MyToken"
       ]
     },
-    "/Users/deca/code/deca12x/SolidityBootcamp2023/Day12/project/node_modules/@openzeppelin/contracts/token/ERC20/extensions/draft-ERC20Permit.sol": {
+    "/Users/deca/code/deca12x/SolidityBootcamp2023/Day12TokenizedBallot/project/node_modules/@openzeppelin/contracts/token/ERC20/extensions/draft-ERC20Permit.sol": {
       "lastModificationDate": 1699556585321,
       "contentHash": "0ebe4a60af340ba617d3fb68db43c990",
       "sourceName": "@openzeppelin/contracts/token/ERC20/extensions/draft-ERC20Permit.sol",
@@ -1219,8 +1219,8 @@
       ],
       "artifacts": []
     },
-    "/Users/deca/code/deca12x/SolidityBootcamp2023/Day12/project/contracts/TokenSale.sol": {
-      "lastModificationDate": 1700361121214,
+    "/Users/deca/code/deca12x/SolidityBootcamp2023/Day12TokenizedBallot/project/contracts/TokenSale.sol": {
+      "lastModificationDate": 1701375347157,
       "contentHash": "d605c1b1903d4afd67deeac54b357f05",
       "sourceName": "contracts/TokenSale.sol",
       "solcConfig": {
@@ -1260,7 +1260,7 @@
         "TokenSale"
       ]
     },
-    "/Users/deca/code/deca12x/SolidityBootcamp2023/Day12/project/node_modules/@openzeppelin/contracts/access/Ownable.sol": {
+    "/Users/deca/code/deca12x/SolidityBootcamp2023/Day12TokenizedBallot/project/node_modules/@openzeppelin/contracts/access/Ownable.sol": {
       "lastModificationDate": 1699556585436,
       "contentHash": "5a20b2cad87ddb61c7a3a6af21289e28",
       "sourceName": "@openzeppelin/contracts/access/Ownable.sol",
@@ -1297,7 +1297,80 @@
         "Ownable"
       ]
     },
-    "/Users/deca/code/deca12x/SolidityBootcamp2023/Day12/project/contracts/TokenizedBallot.sol": {
+    "/Users/deca/code/deca12x/SolidityBootcamp2023/Day12TokenizedBallot/project/contracts/TokenShop.sol": {
+      "lastModificationDate": 1706454801524,
+      "contentHash": "e9cda28d87cd9f0a349d19b02991e645",
+      "sourceName": "contracts/TokenShop.sol",
+      "solcConfig": {
+        "version": "0.8.19",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "@chainlink/contracts/src/v0.8/interfaces/AggregatorV3Interface.sol"
+      ],
+      "versionPragmas": [
+        "0.8.19"
+      ],
+      "artifacts": [
+        "TokenInterface",
+        "TokenShop"
+      ]
+    },
+    "/Users/deca/code/deca12x/SolidityBootcamp2023/Day12TokenizedBallot/project/node_modules/@chainlink/contracts/src/v0.8/interfaces/AggregatorV3Interface.sol": {
+      "lastModificationDate": 1706454703029,
+      "contentHash": "29c520cd24ad9a3f2c9cf285fee25f05",
+      "sourceName": "@chainlink/contracts/src/v0.8/interfaces/AggregatorV3Interface.sol",
+      "solcConfig": {
+        "version": "0.8.19",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "AggregatorV3Interface"
+      ]
+    },
+    "/Users/deca/code/deca12x/SolidityBootcamp2023/Day12TokenizedBallot/project/contracts/TokenizedBallot.sol": {
       "lastModificationDate": 1700366760958,
       "contentHash": "4329339119c1c86ebb6ada03ef9e357a",
       "sourceName": "contracts/TokenizedBallot.sol",

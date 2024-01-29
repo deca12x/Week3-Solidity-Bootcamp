@@ -3,6 +3,8 @@
 /* eslint-disable */
 import type * as tokenSaleSol from "./TokenSale.sol";
 export type { tokenSaleSol };
+import type * as tokenShopSol from "./TokenShop.sol";
+export type { tokenShopSol };
 import type * as tokenizedBallotSol from "./TokenizedBallot.sol";
 export type { tokenizedBallotSol };
 export type { MyNFT } from "./MyNFT";
